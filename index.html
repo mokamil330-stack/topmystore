@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Meridian — Vantier Automatic Watches</title>
+<meta name="description" content="The Meridian. A Swiss-movement automatic watch in titanium and sapphire, built to be worn for decades. Free worldwide shipping, 2-year warranty.">
+<meta property="og:title" content="The Meridian — Vantier">
+<meta property="og:description" content="Precision, worn quietly. A Swiss-movement automatic watch in titanium and sapphire.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%230C0B0A%22 stroke=%22%23B08D57%22 stroke-width=%224%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Announcement bar -->
+<div class="announce" role="note">
+  <div class="announce__track">
+    <span>Free worldwide shipping</span>
+    <span aria-hidden="true">·</span>
+    <span>2-year movement warranty</span>
+    <span aria-hidden="true">·</span>
+    <span>Complimentary engraving</span>
+    <span aria-hidden="true">·</span>
+    <span>30-day trial</span>
+    <span aria-hidden="true">·</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="site-header__inner">
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="brand" href="#top">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="16" x2="16" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="16" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>VANTIER</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#watch">The Watch</a>
+      <a href="#craft">Craft</a>
+      <a href="#configure">Configure</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button class="cart-toggle" id="cartToggle" aria-label="Open cart" aria-controls="cartDrawer" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span class="cart-toggle__count" id="cartCount" hidden>0</span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#watch">The Watch</a>
+    <a href="#craft">Craft</a>
+    <a href="#configure">Configure</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Automatic &nbsp;·&nbsp; Ref. 04.1 &nbsp;·&nbsp; Titanium</p>
+        <h1 class="hero__title">The&nbsp;Meridian</h1>
+        <p class="hero__sub">A Swiss automatic movement, cased in grade-5 titanium and sealed under sapphire. Built to run for generations, quietly.</p>
+
+        <div class="hero__price-row">
+          <span class="price" id="heroPrice">$1,180</span>
+          <span class="price-note">or 4 payments of <span id="heroPricePart">$295</span></span>
+        </div>
+
+        <div class="hero__actions">
+          <button class="btn btn--primary" id="heroAddToCart">Add to Cart</button>
+          <a class="btn btn--ghost" href="#configure">Build Yours</a>
+        </div>
+
+        <ul class="hero__trust">
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15l9-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> 100m water resistant</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15l9-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> 70hr power reserve</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15l9-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Sapphire crystal</li>
+        </ul>
+      </div>
+
+      <div class="hero__stage">
+        <div class="watch-wrap" id="watchWrap">
+          <!-- Watch SVG built in-line so it can be recolored & rotated live -->
+          <svg class="watch-svg" viewBox="0 0 440 440" id="watchSvg" role="img" aria-label="The Meridian automatic watch">
+            <defs>
+              <radialGradient id="caseGrad" cx="35%" cy="30%" r="80%">
+                <stop offset="0%" stop-color="var(--case-hi)"/>
+                <stop offset="55%" stop-color="var(--case-mid)"/>
+                <stop offset="100%" stop-color="var(--case-lo)"/>
+              </radialGradient>
+              <radialGradient id="dialGrad" cx="40%" cy="35%" r="75%">
+                <stop offset="0%" stop-color="#232019"/>
+                <stop offset="100%" stop-color="#100E0B"/>
+              </radialGradient>
+              <linearGradient id="crystalShine" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+                <stop offset="45%" stop-color="rgba(255,255,255,0)"/>
+              </linearGradient>
+            </defs>
+
+            <!-- lugs / strap top -->
+            <g id="strapTop" fill="var(--strap-color)">
+              <path d="M175 60 L265 60 L258 4 Q220 -8 182 4 Z"/>
+            </g>
+            <g id="strapBottom" fill="var(--strap-color)">
+              <path d="M175 380 L265 380 L258 436 Q220 448 182 436 Z"/>
+            </g>
+
+            <!-- case -->
+            <circle cx="220" cy="220" r="150" fill="url(#caseGrad)" stroke="var(--case-lo)" stroke-width="2"/>
+            <circle cx="220" cy="220" r="150" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+
+            <!-- rotating bezel (draggable) -->
+            <g id="bezel" class="bezel" transform-origin="220 220">
+              <circle cx="220" cy="220" r="150" fill="none" stroke="var(--case-lo)" stroke-width="20"/>
+              <circle cx="220" cy="220" r="150" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+              <g class="bezel__ticks" stroke="var(--bezel-tick)" stroke-width="3" stroke-linecap="round">
+                <!-- ticks generated -->
+              </g>
+              <circle class="bezel__pip" cx="220" cy="76" r="6" fill="var(--brass-light)"/>
+            </g>
+
+            <!-- crown -->
+            <rect x="368" y="205" width="26" height="30" rx="5" fill="var(--case-mid)" stroke="var(--case-lo)" stroke-width="1.5"/>
+            <rect x="360" y="212" width="12" height="16" rx="3" fill="var(--case-lo)"/>
+
+            <!-- dial -->
+            <circle cx="220" cy="220" r="122" fill="url(#dialGrad)"/>
+            <circle cx="220" cy="220" r="122" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+            <g class="hour-markers" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" opacity="0.85"></g>
+
+            <text x="220" y="150" text-anchor="middle" font-family="Fraunces, serif" font-size="15" fill="var(--ink-muted)" letter-spacing="3">VANTIER</text>
+            <text x="220" y="300" text-anchor="middle" font-family="Space Mono, monospace" font-size="9" fill="var(--ink-muted)" letter-spacing="2">AUTOMATIC · 100M</text>
+
+            <!-- date window -->
+            <rect x="268" y="211" width="22" height="18" rx="2" fill="#0b0a08" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <text x="279" y="225" text-anchor="middle" font-family="Space Mono, monospace" font-size="11" fill="var(--brass-light)">14</text>
+
+            <!-- hands -->
+            <g stroke-linecap="round">
+              <line x1="220" y1="220" x2="220" y2="140" stroke="var(--ink)" stroke-width="6"/>
+              <line x1="220" y1="220" x2="270" y2="220" stroke="var(--ink)" stroke-width="5"/>
+              <line x1="220" y1="220" x2="195" y2="150" stroke="var(--brass-light)" stroke-width="2"/>
+            </g>
+            <circle cx="220" cy="220" r="7" fill="var(--brass-light)"/>
+
+            <!-- crystal shine overlay -->
+            <circle cx="220" cy="220" r="122" fill="url(#crystalShine)"/>
+          </svg>
+          <p class="watch-hint" id="watchHint">Drag the bezel</p>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip" aria-label="Trust indicators">
+    <div class="trust-strip__inner">
+      <div><strong>4.9 / 5</strong><span>from 2,140 collectors</span></div>
+      <div><strong>12,000+</strong><span>units on wrists worldwide</span></div>
+      <div><strong>Est. 2016</strong><span>independent watchmaker</span></div>
+      <div><strong>2 yr</strong><span>movement warranty</span></div>
+    </div>
+  </section>
+
+  <!-- CRAFT / STORY -->
+  <section class="craft" id="craft">
+    <div class="craft__grid">
+      <div class="craft__art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="gear-art">
+          <circle cx="150" cy="150" r="70" fill="none" stroke="var(--brass)" stroke-width="2" opacity="0.5"/>
+          <g class="gear-art__cog" fill="none" stroke="var(--brass-light)" stroke-width="2">
+            <circle cx="150" cy="150" r="46"/>
+            <g stroke-width="3">
+              <line x1="150" y1="80" x2="150" y2="98"/>
+              <line x1="150" y1="202" x2="150" y2="220"/>
+              <line x1="80" y1="150" x2="98" y2="150"/>
+              <line x1="202" y1="150" x2="220" y2="150"/>
+              <line x1="99" y1="99" x2="112" y2="112"/>
+              <line x1="188" y1="188" x2="201" y2="201"/>
+              <line x1="99" y1="201" x2="112" y2="188"/>
+              <line x1="188" y1="112" x2="201" y2="99"/>
+            </g>
+          </g>
+          <g class="gear-art__cog gear-art__cog--sm" fill="none" stroke="var(--ink-muted)" stroke-width="1.6" opacity="0.7">
+            <circle cx="270" cy="240" r="28"/>
+            <line x1="270" y1="204" x2="270" y2="214"/>
+            <line x1="270" y1="266" x2="270" y2="276"/>
+            <line x1="234" y1="240" x2="244" y2="240"/>
+            <line x1="296" y1="240" x2="306" y2="240"/>
+          </g>
+          <circle cx="150" cy="150" r="5" fill="var(--brass-light)"/>
+          <circle cx="270" cy="240" r="4" fill="var(--ink-muted)"/>
+        </svg>
+      </div>
+      <div class="craft__copy">
+        <p class="eyebrow">Craft</p>
+        <h2>Every part earns its place</h2>
+        <p class="craft__lead">Most watches at this price point hide a generic movement behind a nice dial. The Meridian doesn't. We regulate every movement in-house across five positions before it's cased, and we publish the tolerance: −4/+6 seconds a day, or we redo it.</p>
+        <div class="craft__stats">
+          <div><span class="craft__num">28</span><span>jewels in the movement</span></div>
+          <div><span class="craft__num">200</span><span>hours of QC per batch of 50</span></div>
+          <div><span class="craft__num">1</span><span>watchmaker signs your caseback</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs" id="watch">
+    <div class="section-head">
+      <p class="eyebrow">Specification</p>
+      <h2>What's inside Ref. 04.1</h2>
+    </div>
+    <div class="specs__grid">
+      <div class="spec-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <h3>Movement</h3>
+        <p>VNT-C1 automatic, 28 jewels, 70-hour power reserve, hacking seconds.</p>
+      </div>
+      <div class="spec-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="7" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        <h3>Case</h3>
+        <p>Grade-5 titanium, 39mm × 11.2mm, brushed and bead-blasted finish.</p>
+      </div>
+      <div class="spec-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v6c0 4.5 3.4 7.7 8 8 4.6-.3 8-3.5 8-8V7l-8-4Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <h3>Crystal</h3>
+        <p>Domed sapphire, anti-reflective coating on both sides.</p>
+      </div>
+      <div class="spec-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c4-3.5 7-7 7-11a7 7 0 1 0-14 0c0 4 3 7.5 7 11Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <h3>Water Resistance</h3>
+        <p>100m / 10 ATM — rated for swimming, not diving.</p>
+      </div>
+      <div class="spec-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M4 12a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2M4 12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        <h3>Strap</h3>
+        <p>Quick-release, interchangeable — leather, steel or rubber.</p>
+      </div>
+      <div class="spec-card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V10M12 20V4M18 20v-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <h3>Weight</h3>
+        <p>68g on the titanium bracelet — roughly a third lighter than steel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIGURATOR -->
+  <section class="configure" id="configure">
+    <div class="configure__grid">
+      <div class="configure__preview">
+        <div class="watch-wrap watch-wrap--small" aria-hidden="true">
+          <div class="configure__glow"></div>
+          <svg viewBox="0 0 220 220" class="mini-watch">
+            <path d="M92 30 L128 30 L124 6 Q110 -2 96 6 Z" fill="var(--strap-color)"/>
+            <path d="M92 190 L128 190 L124 214 Q110 222 96 214 Z" fill="var(--strap-color)"/>
+            <circle cx="110" cy="110" r="76" fill="var(--case-mid)" stroke="var(--case-lo)" stroke-width="2"/>
+            <circle cx="110" cy="110" r="60" fill="#14120F" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <line x1="110" y1="110" x2="110" y2="76" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="110" y1="110" x2="134" y2="118" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="110" cy="110" r="4" fill="var(--brass-light)"/>
+          </svg>
+        </div>
+        <p class="configure__caption" id="configureCaption">Titanium case · Brown leather strap</p>
+      </div>
+
+      <div class="configure__panel">
+        <p class="eyebrow">Build yours</p>
+        <h2>Make it yours</h2>
+
+        <fieldset class="option-group">
+          <legend>Case finish</legend>
+          <div class="swatches" id="caseOptions">
+            <button type="button" class="swatch" data-case="titanium" data-price="0" style="--sw:#9C9691" aria-pressed="true">Titanium</button>
+            <button type="button" class="swatch" data-case="steel" data-price="0" style="--sw:#B9BEC2" aria-pressed="false">Steel</button>
+            <button type="button" class="swatch" data-case="black" data-price="60" style="--sw:#2A2926" aria-pressed="false">Black DLC <em>+$60</em></button>
+          </div>
+        </fieldset>
+
+        <fieldset class="option-group">
+          <legend>Strap</legend>
+          <div class="swatches" id="strapOptions">
+            <button type="button" class="swatch" data-strap="leather" data-price="0" style="--sw:#5A3A28" aria-pressed="true">Brown Leather</button>
+            <button type="button" class="swatch" data-strap="steel" data-price="90" style="--sw:#B9BEC2" aria-pressed="false">Steel Bracelet <em>+$90</em></button>
+            <button type="button" class="swatch" data-strap="rubber" data-price="20" style="--sw:#1B1B1A" aria-pressed="false">Rubber <em>+$20</em></button>
+          </div>
+        </fieldset>
+
+        <fieldset class="option-group">
+          <legend>Engraving <span class="option-group__optional">(optional, free)</span></legend>
+          <input type="text" id="engravingInput" maxlength="20" placeholder="e.g. To J.R. — 2026" class="text-input">
+          <p class="field-hint"><span id="engraveCount">0</span>/20 characters, caseback only</p>
+        </fieldset>
+
+        <div class="configure__price-row">
+          <span>Total</span>
+          <strong id="configPrice">$1,180</strong>
+        </div>
+
+        <button class="btn btn--primary btn--block" id="configAddToCart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / DETAIL SHOTS -->
+  <section class="gallery" aria-label="Detail views">
+    <div class="gallery__track">
+      <figure class="gallery__item">
+        <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="70" fill="none" stroke="var(--brass)" stroke-width="10"/><circle cx="100" cy="100" r="70" fill="none" stroke="var(--brass-light)" stroke-width="1" stroke-dasharray="2 8"/></svg>
+        <figcaption>Knurled crown, screw-down for water resistance</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <svg viewBox="0 0 200 200"><rect x="40" y="40" width="120" height="120" rx="60" fill="none" stroke="var(--ink-muted)" stroke-width="6"/><path d="M60 100h80M100 60v80" stroke="var(--brass-light)" stroke-width="2"/></svg>
+        <figcaption>Signed, numbered titanium caseback</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <svg viewBox="0 0 200 200"><path d="M30 100c20-40 120-40 140 0" fill="none" stroke="var(--brass)" stroke-width="6" stroke-linecap="round"/><path d="M30 100c20 40 120 40 140 0" fill="none" stroke="var(--brass-light)" stroke-width="2" stroke-linecap="round"/></svg>
+        <figcaption>Micro-adjust deployant clasp</figcaption>
+      </figure>
+      <figure class="gallery__item">
+        <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="75" fill="none" stroke="var(--ink)" stroke-width="1"/><circle cx="100" cy="100" r="60" fill="none" stroke="var(--ink)" stroke-width="1" opacity="0.5"/><circle cx="100" cy="100" r="45" fill="none" stroke="var(--ink)" stroke-width="1" opacity="0.3"/></svg>
+        <figcaption>Sunray-brushed dial texture</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="section-head">
+      <p class="eyebrow">Reviews</p>
+      <h2>Worn daily, reviewed honestly</h2>
+    </div>
+    <div class="reviews__grid">
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Three years in, still gaining under 3 seconds a week. The bracelet has held up to a job site better than watches twice the price."</p>
+        <cite>— D. Alvarez, verified owner</cite>
+      </article>
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"The bezel action alone justifies the price. Nothing about this feels like a first-year brand's watch."</p>
+        <cite>— M. Okafor, verified owner</cite>
+      </article>
+      <article class="review-card">
+        <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+        <p>"Wish the box was a bit nicer, but the watch itself is exactly what the site promises. Sizing guide was accurate."</p>
+        <cite>— S. Larsson, verified owner</cite>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you buy</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">Where do you ship, and how long does it take?<span class="faq-item__icon" aria-hidden="true"></span></button>
+        <div class="faq-item__a"><p>We ship worldwide from our Lisbon workshop. Most orders arrive in 3–6 business days; customs may add time outside the EU.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">What's covered under warranty?<span class="faq-item__icon" aria-hidden="true"></span></button>
+        <div class="faq-item__a"><p>Two years on the movement and case, unconditionally. Straps and clasps are covered against manufacturing defects for one year.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">Can I return it if it's not right for me?<span class="faq-item__icon" aria-hidden="true"></span></button>
+        <div class="faq-item__a"><p>Yes — you have 30 days from delivery. It should be unworn outside of trying it on, in its original box, with the protective stickers intact.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q" aria-expanded="false">How do I size the bracelet or strap?<span class="faq-item__icon" aria-hidden="true"></span></button>
+        <div class="faq-item__a"><p>Every order ships with a sizing tool and instructions. If you'd rather we do it, tell us your wrist size at checkout and we'll pre-size it before shipping.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <h2>The Meridian is ready when you are.</h2>
+    <p>Free shipping, free returns for 30 days, and a two-year warranty behind every case.</p>
+    <button class="btn btn--primary btn--lg" id="finalAddToCart">Add to Cart — <span id="finalPrice">$1,180</span></button>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="brand" href="#top">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="16" x2="16" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="16" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>VANTIER</span>
+      </a>
+      <p>Independent watchmaker. One model, made well, made to last.</p>
+    </div>
+    <div class="site-footer__col">
+      <h4>Shop</h4>
+      <a href="#configure">Build Yours</a>
+      <a href="#watch">Specification</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <div class="site-footer__col">
+      <h4>Support</h4>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:hello@vantier.example">Contact</a>
+      <a href="#faq">Warranty</a>
+    </div>
+    <div class="site-footer__col">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Journal</a>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <span>© <span id="year"></span> Vantier Watch Co. All rights reserved.</span>
+    <span class="pay-badges" aria-label="Accepted payment methods">Visa · Mastercard · Amex · Apple Pay</span>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-drawer__head">
+    <h2>Your Cart</h2>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-drawer__body" id="cartBody">
+    <p class="cart-empty" id="cartEmpty">Your cart is empty. The Meridian is waiting above.</p>
+    <ul class="cart-items" id="cartItems"></ul>
+  </div>
+  <div class="cart-drawer__foot">
+    <div class="cart-subtotal-row">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0</strong>
+    </div>
+    <p class="field-hint">Shipping and any duties are calculated at checkout.</p>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-overlay" id="checkoutOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="icon-btn modal__close" id="checkoutClose" aria-label="Close checkout">✕</button>
+
+    <div id="checkoutForm">
+      <h2 id="checkoutTitle">Checkout</h2>
+      <p class="modal__sub">Enter your details to complete the order.</p>
+      <form id="orderForm" novalidate>
+        <div class="form-row">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="address">Shipping address</label>
+          <input type="text" id="address" name="address" required autocomplete="street-address">
+        </div>
+        <div class="form-row form-row--split">
+          <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required autocomplete="address-level2">
+          </div>
+          <div>
+            <label for="postal">Postal code</label>
+            <input type="text" id="postal" name="postal" required autocomplete="postal-code">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" required autocomplete="country-name">
+        </div>
+        <p class="form-error" id="formError" role="alert" hidden></p>
+        <button type="submit" class="btn btn--primary btn--block">Place Order — <span id="modalTotal">$0</span></button>
+        <p class="modal__note">This demo checkout does not process real payments. See README for wiring up Stripe, Snipcart or Gumroad.</p>
+      </form>
+    </div>
+
+    <div id="checkoutConfirm" hidden>
+      <div class="confirm-icon" aria-hidden="true">
+        <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="28" fill="none" stroke="var(--brass)" stroke-width="2"/><path d="M18 31l8 8 16-18" fill="none" stroke="var(--brass-light)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2>Order received</h2>
+      <p class="modal__sub">Thank you<span id="confirmName"></span> — a confirmation has been noted for <span id="confirmEmail"></span>.</p>
+      <p class="modal__note">Order reference: <strong id="confirmRef"></strong></p>
+      <button class="btn btn--ghost btn--block" id="confirmClose">Continue browsing</button>
+    </div>
+  </div>
+</div>
+
+<!-- STICKY MOBILE ADD TO CART -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar__info">
+    <strong>The Meridian</strong>
+    <span id="stickyPrice">$1,180</span>
+  </div>
+  <button class="btn btn--primary" id="stickyAddToCart">Add to Cart</button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
